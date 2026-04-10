@@ -35,4 +35,20 @@ public class Candidate {
     @Column(nullable = false)
     @org.hibernate.annotations.CreationTimestamp
     private LocalDateTime createdAt;
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getPasswordHash() {
+        return passwordHash;
+    }
+
+    public void setPasswordHash(String passwordHash) {
+        this.passwordHash = passwordHash;
+    }
 }
